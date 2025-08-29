@@ -1,0 +1,19 @@
+class Produto:
+    def __init__(self, codproduto, nome, descricao, tamanho, preco):
+        self.codproduto = codproduto
+        self.nome = nome
+        self.descricao = descricao
+        self.tamanho = tamanho
+        self.preco = preco
+
+    def desconto(self):
+        preco_com_desconto = self.preco * 0.9
+        print(f"Preço com 10% de desconto para {self.nome}: R$ {preco_com_desconto:.2f}")
+
+produto1 = Produto(101, "Camisa", "Camisa de algodão", "M", 79.90)
+produto2 = Produto(102, "Calça Jeans", "Calça azul escura", "42", 139.90)
+produto3 = Produto(103, "Tênis", "Tênis esportivo", "40", 229.90)
+
+produto1.desconto()
+produto2.desconto()
+produto3.desconto()
